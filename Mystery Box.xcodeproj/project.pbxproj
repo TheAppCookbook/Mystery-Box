@@ -1,0 +1,565 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		734C9E3C1B8B735000B6548D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 734C9E3B1B8B735000B6548D /* AppDelegate.swift */; };
+		734C9E3E1B8B735000B6548D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 734C9E3D1B8B735000B6548D /* ViewController.swift */; };
+		734C9E411B8B735000B6548D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 734C9E3F1B8B735000B6548D /* Main.storyboard */; };
+		734C9E431B8B735000B6548D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 734C9E421B8B735000B6548D /* Assets.xcassets */; };
+		734C9E461B8B735000B6548D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 734C9E441B8B735000B6548D /* LaunchScreen.storyboard */; };
+		734C9E4B1B8B735000B6548D /* Mystery Box WatchKit App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 734C9E4A1B8B735000B6548D /* Mystery Box WatchKit App.app */; };
+		734C9E511B8B735000B6548D /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 734C9E4F1B8B735000B6548D /* Interface.storyboard */; };
+		734C9E531B8B735000B6548D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 734C9E521B8B735000B6548D /* Assets.xcassets */; };
+		734C9E5A1B8B735000B6548D /* Mystery Box WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 734C9E591B8B735000B6548D /* Mystery Box WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		734C9E611B8B735000B6548D /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 734C9E601B8B735000B6548D /* InterfaceController.swift */; };
+		734C9E631B8B735000B6548D /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 734C9E621B8B735000B6548D /* ExtensionDelegate.swift */; };
+		734C9E651B8B735000B6548D /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 734C9E641B8B735000B6548D /* NotificationController.swift */; };
+		734C9E671B8B735000B6548D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 734C9E661B8B735000B6548D /* Assets.xcassets */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		734C9E4C1B8B735000B6548D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 734C9E301B8B735000B6548D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 734C9E491B8B735000B6548D;
+			remoteInfo = "Mystery Box WatchKit App";
+		};
+		734C9E5B1B8B735000B6548D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 734C9E301B8B735000B6548D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 734C9E581B8B735000B6548D;
+			remoteInfo = "Mystery Box WatchKit Extension";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		734C9E6E1B8B735000B6548D /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				734C9E5A1B8B735000B6548D /* Mystery Box WatchKit Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		734C9E721B8B735000B6548D /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				734C9E4B1B8B735000B6548D /* Mystery Box WatchKit App.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		734C9E381B8B735000B6548D /* Mystery Box.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Mystery Box.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		734C9E3B1B8B735000B6548D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		734C9E3D1B8B735000B6548D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		734C9E401B8B735000B6548D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		734C9E421B8B735000B6548D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		734C9E451B8B735000B6548D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		734C9E471B8B735000B6548D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		734C9E4A1B8B735000B6548D /* Mystery Box WatchKit App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Mystery Box WatchKit App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		734C9E501B8B735000B6548D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
+		734C9E521B8B735000B6548D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		734C9E541B8B735000B6548D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		734C9E591B8B735000B6548D /* Mystery Box WatchKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "Mystery Box WatchKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		734C9E5F1B8B735000B6548D /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
+		734C9E601B8B735000B6548D /* InterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterfaceController.swift; sourceTree = "<group>"; };
+		734C9E621B8B735000B6548D /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
+		734C9E641B8B735000B6548D /* NotificationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationController.swift; sourceTree = "<group>"; };
+		734C9E661B8B735000B6548D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		734C9E681B8B735000B6548D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		734C9E351B8B735000B6548D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		734C9E561B8B735000B6548D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		734C9E2F1B8B735000B6548D = {
+			isa = PBXGroup;
+			children = (
+				734C9E3A1B8B735000B6548D /* Mystery Box */,
+				734C9E4E1B8B735000B6548D /* Mystery Box WatchKit App */,
+				734C9E5D1B8B735000B6548D /* Mystery Box WatchKit Extension */,
+				734C9E391B8B735000B6548D /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		734C9E391B8B735000B6548D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				734C9E381B8B735000B6548D /* Mystery Box.app */,
+				734C9E4A1B8B735000B6548D /* Mystery Box WatchKit App.app */,
+				734C9E591B8B735000B6548D /* Mystery Box WatchKit Extension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		734C9E3A1B8B735000B6548D /* Mystery Box */ = {
+			isa = PBXGroup;
+			children = (
+				734C9E3B1B8B735000B6548D /* AppDelegate.swift */,
+				734C9E3D1B8B735000B6548D /* ViewController.swift */,
+				734C9E3F1B8B735000B6548D /* Main.storyboard */,
+				734C9E421B8B735000B6548D /* Assets.xcassets */,
+				734C9E441B8B735000B6548D /* LaunchScreen.storyboard */,
+				734C9E471B8B735000B6548D /* Info.plist */,
+			);
+			path = "Mystery Box";
+			sourceTree = "<group>";
+		};
+		734C9E4E1B8B735000B6548D /* Mystery Box WatchKit App */ = {
+			isa = PBXGroup;
+			children = (
+				734C9E4F1B8B735000B6548D /* Interface.storyboard */,
+				734C9E521B8B735000B6548D /* Assets.xcassets */,
+				734C9E541B8B735000B6548D /* Info.plist */,
+			);
+			path = "Mystery Box WatchKit App";
+			sourceTree = "<group>";
+		};
+		734C9E5D1B8B735000B6548D /* Mystery Box WatchKit Extension */ = {
+			isa = PBXGroup;
+			children = (
+				734C9E601B8B735000B6548D /* InterfaceController.swift */,
+				734C9E621B8B735000B6548D /* ExtensionDelegate.swift */,
+				734C9E641B8B735000B6548D /* NotificationController.swift */,
+				734C9E661B8B735000B6548D /* Assets.xcassets */,
+				734C9E681B8B735000B6548D /* Info.plist */,
+				734C9E5E1B8B735000B6548D /* Supporting Files */,
+			);
+			path = "Mystery Box WatchKit Extension";
+			sourceTree = "<group>";
+		};
+		734C9E5E1B8B735000B6548D /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				734C9E5F1B8B735000B6548D /* PushNotificationPayload.apns */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		734C9E371B8B735000B6548D /* Mystery Box */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 734C9E731B8B735000B6548D /* Build configuration list for PBXNativeTarget "Mystery Box" */;
+			buildPhases = (
+				734C9E341B8B735000B6548D /* Sources */,
+				734C9E351B8B735000B6548D /* Frameworks */,
+				734C9E361B8B735000B6548D /* Resources */,
+				734C9E721B8B735000B6548D /* Embed Watch Content */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				734C9E4D1B8B735000B6548D /* PBXTargetDependency */,
+			);
+			name = "Mystery Box";
+			productName = "Mystery Box";
+			productReference = 734C9E381B8B735000B6548D /* Mystery Box.app */;
+			productType = "com.apple.product-type.application";
+		};
+		734C9E491B8B735000B6548D /* Mystery Box WatchKit App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 734C9E6F1B8B735000B6548D /* Build configuration list for PBXNativeTarget "Mystery Box WatchKit App" */;
+			buildPhases = (
+				734C9E481B8B735000B6548D /* Resources */,
+				734C9E6E1B8B735000B6548D /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				734C9E5C1B8B735000B6548D /* PBXTargetDependency */,
+			);
+			name = "Mystery Box WatchKit App";
+			productName = "Mystery Box WatchKit App";
+			productReference = 734C9E4A1B8B735000B6548D /* Mystery Box WatchKit App.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		734C9E581B8B735000B6548D /* Mystery Box WatchKit Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 734C9E6B1B8B735000B6548D /* Build configuration list for PBXNativeTarget "Mystery Box WatchKit Extension" */;
+			buildPhases = (
+				734C9E551B8B735000B6548D /* Sources */,
+				734C9E561B8B735000B6548D /* Frameworks */,
+				734C9E571B8B735000B6548D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Mystery Box WatchKit Extension";
+			productName = "Mystery Box WatchKit Extension";
+			productReference = 734C9E591B8B735000B6548D /* Mystery Box WatchKit Extension.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		734C9E301B8B735000B6548D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0700;
+				ORGANIZATIONNAME = AppCookbook;
+				TargetAttributes = {
+					734C9E371B8B735000B6548D = {
+						CreatedOnToolsVersion = 7.0;
+					};
+					734C9E491B8B735000B6548D = {
+						CreatedOnToolsVersion = 7.0;
+					};
+					734C9E581B8B735000B6548D = {
+						CreatedOnToolsVersion = 7.0;
+					};
+				};
+			};
+			buildConfigurationList = 734C9E331B8B735000B6548D /* Build configuration list for PBXProject "Mystery Box" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 734C9E2F1B8B735000B6548D;
+			productRefGroup = 734C9E391B8B735000B6548D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				734C9E371B8B735000B6548D /* Mystery Box */,
+				734C9E491B8B735000B6548D /* Mystery Box WatchKit App */,
+				734C9E581B8B735000B6548D /* Mystery Box WatchKit Extension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		734C9E361B8B735000B6548D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				734C9E461B8B735000B6548D /* LaunchScreen.storyboard in Resources */,
+				734C9E431B8B735000B6548D /* Assets.xcassets in Resources */,
+				734C9E411B8B735000B6548D /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		734C9E481B8B735000B6548D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				734C9E531B8B735000B6548D /* Assets.xcassets in Resources */,
+				734C9E511B8B735000B6548D /* Interface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		734C9E571B8B735000B6548D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				734C9E671B8B735000B6548D /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		734C9E341B8B735000B6548D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				734C9E3E1B8B735000B6548D /* ViewController.swift in Sources */,
+				734C9E3C1B8B735000B6548D /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		734C9E551B8B735000B6548D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				734C9E651B8B735000B6548D /* NotificationController.swift in Sources */,
+				734C9E631B8B735000B6548D /* ExtensionDelegate.swift in Sources */,
+				734C9E611B8B735000B6548D /* InterfaceController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		734C9E4D1B8B735000B6548D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 734C9E491B8B735000B6548D /* Mystery Box WatchKit App */;
+			targetProxy = 734C9E4C1B8B735000B6548D /* PBXContainerItemProxy */;
+		};
+		734C9E5C1B8B735000B6548D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 734C9E581B8B735000B6548D /* Mystery Box WatchKit Extension */;
+			targetProxy = 734C9E5B1B8B735000B6548D /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		734C9E3F1B8B735000B6548D /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				734C9E401B8B735000B6548D /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		734C9E441B8B735000B6548D /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				734C9E451B8B735000B6548D /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		734C9E4F1B8B735000B6548D /* Interface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				734C9E501B8B735000B6548D /* Base */,
+			);
+			name = Interface.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		734C9E691B8B735000B6548D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		734C9E6A1B8B735000B6548D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		734C9E6C1B8B735000B6548D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "iPhone Developer";
+				INFOPLIST_FILE = "Mystery Box WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "the.appcookbook.Mystery-Box.watchkitapp.watchkitextension";
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
+			};
+			name = Debug;
+		};
+		734C9E6D1B8B735000B6548D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "iPhone Developer";
+				INFOPLIST_FILE = "Mystery Box WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "the.appcookbook.Mystery-Box.watchkitapp.watchkitextension";
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
+			};
+			name = Release;
+		};
+		734C9E701B8B735000B6548D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "iPhone Developer";
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				IBSC_MODULE = Mystery_Box_WatchKit_Extension;
+				INFOPLIST_FILE = "Mystery Box WatchKit App/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = "the.appcookbook.Mystery-Box.watchkitapp";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
+			};
+			name = Debug;
+		};
+		734C9E711B8B735000B6548D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "iPhone Developer";
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				IBSC_MODULE = Mystery_Box_WatchKit_Extension;
+				INFOPLIST_FILE = "Mystery Box WatchKit App/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = "the.appcookbook.Mystery-Box.watchkitapp";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
+			};
+			name = Release;
+		};
+		734C9E741B8B735000B6548D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "Mystery Box/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "the.appcookbook.Mystery-Box";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		734C9E751B8B735000B6548D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "Mystery Box/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "the.appcookbook.Mystery-Box";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		734C9E331B8B735000B6548D /* Build configuration list for PBXProject "Mystery Box" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				734C9E691B8B735000B6548D /* Debug */,
+				734C9E6A1B8B735000B6548D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		734C9E6B1B8B735000B6548D /* Build configuration list for PBXNativeTarget "Mystery Box WatchKit Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				734C9E6C1B8B735000B6548D /* Debug */,
+				734C9E6D1B8B735000B6548D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		734C9E6F1B8B735000B6548D /* Build configuration list for PBXNativeTarget "Mystery Box WatchKit App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				734C9E701B8B735000B6548D /* Debug */,
+				734C9E711B8B735000B6548D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		734C9E731B8B735000B6548D /* Build configuration list for PBXNativeTarget "Mystery Box" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				734C9E741B8B735000B6548D /* Debug */,
+				734C9E751B8B735000B6548D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 734C9E301B8B735000B6548D /* Project object */;
+}
