@@ -10,6 +10,7 @@ import UIKit
 import Parse
 import AFNetworking
 import ACBInfoPanel
+import TUSafariActivity
 
 class ViewController: UIViewController {
     // MARK: Properties
@@ -84,7 +85,7 @@ class ViewController: UIViewController {
             view.resize(1.0,
                 widthConstraint: self.boxViewWidthConstraint,
                 heightConstraint: self.boxViewHeightConstraint,
-                size: view.frame.size.scaled(1.3))
+                size: view.frame.size.scaled(1.1))
         }
         
         accumulatedDelay += 2.0
@@ -94,7 +95,7 @@ class ViewController: UIViewController {
             view.resize(1.0,
                 widthConstraint: self.boxViewWidthConstraint,
                 heightConstraint: self.boxViewHeightConstraint,
-                size: view.frame.size.scaled(1.5))
+                size: view.frame.size.scaled(1.2))
         }
 
         accumulatedDelay += 2.0
@@ -104,7 +105,7 @@ class ViewController: UIViewController {
             view.resize(1.0,
                 widthConstraint: self.boxViewWidthConstraint,
                 heightConstraint: self.boxViewHeightConstraint,
-                size: view.frame.size.scaled(1.8))
+                size: view.frame.size.scaled(1.2))
         }
 
         accumulatedDelay += 1.0
@@ -149,8 +150,11 @@ class ViewController: UIViewController {
     // MARK: Responders
     @IBAction func shareButtonWasPressed(sender: UIButton!) {
         let activityVC = UIActivityViewController(activityItems: [
-            self.latestContent!.url
-        ], applicationActivities: nil)
+            NSURL(string: self.latestContent!.url)!
+        ], applicationActivities: [
+            TUSafariActivity()
+        ])
+        
         self.presentViewController(activityVC,
             animated: true,
             completion: nil)
@@ -159,6 +163,7 @@ class ViewController: UIViewController {
     @IBAction func aboutButtonWasPressed(sender: UIButton!) {
         let aboutVC = ACBInfoPanelViewController()
         aboutVC.ingredient = "Mystery Box"
+        
         self.presentViewController(aboutVC,
             animated: true,
             completion: nil)

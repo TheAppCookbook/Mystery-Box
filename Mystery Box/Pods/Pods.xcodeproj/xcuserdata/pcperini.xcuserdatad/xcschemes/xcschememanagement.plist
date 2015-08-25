@@ -29,30 +29,50 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>TUSafariActivity-TUSafariActivity.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>TUSafariActivity.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>01F3424548FA31F55BA6CDB059FD34AA</key>
+		<key>03DC48207E021BC885E3AB108614BAD0</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>0CC17020EB949DFA89B2E0FB8E0C5175</key>
+		<key>1CBAE1D2F2A5C12C0997DEC34CD1DA08</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>36934A4D366F0114F23888C1AADE8F20</key>
+		<key>58A5843F7EA5EA53D3F5F027D017FFDD</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>87926F6C64EE460C21A31205EA2607DE</key>
+		<key>5BF2FA0642D9E6EB9DF60468F0AB50CF</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>EE942F7AB83669E5E5DED8264834DD79</key>
+		<key>6267A1E3F66B869C688E8EE237BEF095</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>B1839BB0B474DBF1BD3A9E2DB3017F3D</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>D468D3ADABD80C00F8383F9523667B5A</key>
 		<dict>
 			<key>primary</key>
 			<true/>
