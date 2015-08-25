@@ -2,18 +2,25 @@ from bs4 import BeautifulSoup as Soup
 import requests
 import random
 from urlparse import urlparse
+import json
 
 
 class Source:
     # Class Properties
-    source_list = open('sources.list').read().split('\n')
+    source_list = json.load(open('sources.json', 'r'))
     _user_agent = (
         'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_3) AppleWebKit/600.6.3 '
         '(KHTML, like Gecko) Version/8.0.6 Safari/600.6.3'
     )
     
     # Initializers
-    def __init__(self, url, depth=5, choose_random=True):
+    def __init__(self, url=None, choose_random=True):
+        if url is None:
+            url = random.choice(Source.source_list.keys())
+            
+        if url in Source.source_list.keys():
+            depth = Source.source_list[url]
+        
         self.url = Source._traverse_tree(
             url, depth, choose_random
         )
@@ -34,7 +41,7 @@ class Source:
         traversed_urls = []
         url = source_url
                 
-        for i in range(depth):
+        for i in range(depth + 1):        
             resp = requests.get(
                 url,
                 headers={'User-Agent': Source._user_agent}
@@ -44,7 +51,7 @@ class Source:
                 i -= 1  # repeat cycle
                 continue
                 
-            traversed_urls.append(url)
+            traversed_urls.append(str(url))
             
             content_type = resp.headers.get('Content-Type')
             if content_type.startswith('text/html'):
@@ -63,29 +70,14 @@ class Source:
             next_url = cls._choose_link(links, rand=rand)
             
             print("... " + str(next_url))
-            if next_url:
+            if next_url and next_url.startswith('http'):
                 url = next_url
             
         return traversed_urls[-1]
     
     @classmethod
     def _clean_soup(cls, soup):
-        for elem in soup.find_all(id="header") or []:
-            elem.decompose()
-            
-        soup = Soup(str(soup), 'html.parser')
-        for elem in soup.find_all(class_="header") or []:
-            elem.decompose()
-            
-        soup = Soup(str(soup), 'html.parser')
-        for elem in soup.find_all(id="footer") or []:
-            elem.decompose()
-            
-        soup = Soup(str(soup), 'html.parser')
-        for elem in soup.find_all(class_="footer") or []:
-            elem.decompose()
-        
-        return Soup(str(soup), 'html.parser')
+        return soup
         
     @classmethod
     def _clean_link(cls, link, base_url):
