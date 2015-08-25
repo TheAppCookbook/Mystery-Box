@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>E8C29982-367F-49FB-AFF8-BD8D560A73E3</string>
+	<key>IDESourceControlProjectName</key>
+	<string>Mystery Box</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>AD667685085FCDE4FE191288CE36CA0EA5E9BF23</key>
+		<string>github.com:TheAppCookbook/Mystery-Box.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>Mystery Box/Mystery Box.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>AD667685085FCDE4FE191288CE36CA0EA5E9BF23</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>github.com:TheAppCookbook/Mystery-Box.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>AD667685085FCDE4FE191288CE36CA0EA5E9BF23</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>AD667685085FCDE4FE191288CE36CA0EA5E9BF23</string>
+			<key>IDESourceControlWCCName</key>
+			<string>MysteryBox</string>
+		</dict>
+	</array>
+</dict>
+</plist>
