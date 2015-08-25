@@ -45,7 +45,7 @@
                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                     <subviews>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JlL-tc-zFf">
-                                            <rect key="frame" x="18" y="36" width="278" height="19"/>
+                                            <rect key="frame" x="18" y="24" width="278" height="19"/>
                                             <fontDescription key="fontDescription" name="Inconsolata-Regular" family="Inconsolata" pointSize="18"/>
                                             <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                             <nil key="highlightedColor"/>
@@ -54,7 +54,7 @@
                                     <constraints>
                                         <constraint firstItem="JlL-tc-zFf" firstAttribute="leading" secondItem="43k-5S-Hxf" secondAttribute="leading" constant="18" id="BGg-qa-Uu8"/>
                                         <constraint firstAttribute="trailing" secondItem="JlL-tc-zFf" secondAttribute="trailing" constant="8" id="Jrt-k7-DiH"/>
-                                        <constraint firstItem="JlL-tc-zFf" firstAttribute="top" secondItem="43k-5S-Hxf" secondAttribute="top" constant="36" id="wFp-TA-5yc"/>
+                                        <constraint firstItem="JlL-tc-zFf" firstAttribute="top" secondItem="43k-5S-Hxf" secondAttribute="top" constant="24" id="wFp-TA-5yc"/>
                                     </constraints>
                                 </view>
                                 <constraints>
@@ -77,10 +77,10 @@
                                 </userDefinedRuntimeAttributes>
                             </visualEffectView>
                             <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="YBB-h5-B0e">
-                                <rect key="frame" x="0.0" y="143" width="296" height="167"/>
+                                <rect key="frame" x="0.0" y="112" width="296" height="198"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="296" id="L0R-sQ-DF2"/>
-                                    <constraint firstAttribute="height" constant="167" id="e3r-iY-U9a"/>
+                                    <constraint firstAttribute="height" constant="198" id="e3r-iY-U9a"/>
                                 </constraints>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="shadowRadius">
@@ -95,6 +95,7 @@
                                     <userDefinedRuntimeAttribute type="number" keyPath="shadowAlpha">
                                         <real key="value" value="0.5"/>
                                     </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="masksToBounds" value="YES"/>
                                 </userDefinedRuntimeAttributes>
                             </imageView>
                             <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ocy-dS-mZZ">
