@@ -48,7 +48,7 @@ class ViewController: UIViewController {
     
     // MARK: Lifecycle
     override func viewDidLoad() {
-        var query = Content.query()
+        let query = Content.query()
         query?.orderByDescending("createdAt")
         query?.getFirstObjectInBackgroundWithBlock { (obj: PFObject?, err: NSError?) in
             self.latestContent = obj as? Content

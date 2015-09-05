@@ -23,7 +23,7 @@ class Content: PFObject, PFSubclassing {
     @NSManaged var thumbnail_url: String
     var thumbnailURL: NSURL! {
         get { return NSURL(string: self.thumbnail_url) }
-        set { self.thumbnail_url = newValue.absoluteString! }
+        set { self.thumbnail_url = newValue.absoluteString }
     }
     
     @NSManaged var object_description: String

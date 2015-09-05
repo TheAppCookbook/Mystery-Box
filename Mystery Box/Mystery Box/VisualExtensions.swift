@@ -18,7 +18,7 @@ import UIKit
     }
     
     @IBInspectable var borderColor: UIColor? {
-        get { return UIColor(CGColor: self.layer.borderColor) }
+        get { return UIColor(CGColor: self.layer.borderColor!) }
         set { self.layer.borderColor = newValue?.CGColor }
     }
     
@@ -45,7 +45,7 @@ import UIKit
     }
     
     @IBInspectable var shadowColor: UIColor? {
-        get { return UIColor(CGColor: self.layer.shadowColor) }
+        get { return UIColor(CGColor: self.layer.shadowColor!) }
         set { self.layer.shadowColor = newValue?.CGColor }
     }
     

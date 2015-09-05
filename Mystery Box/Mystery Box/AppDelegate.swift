@@ -22,13 +22,12 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         Content.registerSubclass()
         
-        // Setup Push
-        let userNotificationTypes = UIUserNotificationType.Alert |
-            UIUserNotificationType.Badge |
-            UIUserNotificationType.Sound
-        
-        let settings = UIUserNotificationSettings(forTypes: userNotificationTypes,
-            categories: nil)
+        // Setup Push        
+        let settings = UIUserNotificationSettings(forTypes: [
+            .Alert,
+            .Badge,
+            .Sound
+        ], categories: nil)
         
         application.registerUserNotificationSettings(settings)
         application.registerForRemoteNotifications()
