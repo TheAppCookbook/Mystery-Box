@@ -44,5 +44,12 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             print(success, err)
         }
     }
+    
+    func applicationDidBecomeActive(application: UIApplication) {
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        let initialVC = storyboard.instantiateInitialViewController()
+        
+        self.window?.rootViewController = initialVC
+    }
 }
 
