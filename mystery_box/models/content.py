@@ -29,4 +29,4 @@ class Content(ParseObject):
     # Push Handlers
     def push(self):
         message = "Your next Mystery Box is ready to be opened!"
-        ParsePush.message(message, channels=["all"])
+        ParsePush.message(message, channels=[""])
