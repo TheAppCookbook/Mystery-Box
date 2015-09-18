@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "03DC48207E021BC885E3AB108614BAD0"
+               BlueprintIdentifier = "B2754E4525A39E2CDB328035"
                BuildableName = "TUSafariActivity.framework"
                BlueprintName = "TUSafariActivity"
                ReferencedContainer = "container:Pods.xcodeproj">
@@ -27,10 +27,10 @@
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
       shouldUseLaunchSchemeArgsEnv = "YES"
       buildConfiguration = "Debug">
-      <Testables>
-      </Testables>
       <AdditionalOptions>
       </AdditionalOptions>
+      <Testables>
+      </Testables>
    </TestAction>
    <LaunchAction
       selectedDebuggerIdentifier = "Xcode.DebuggerFoundation.Debugger.LLDB"
@@ -42,15 +42,6 @@
       debugDocumentVersioning = "YES"
       debugServiceExtension = "internal"
       allowLocationSimulation = "YES">
-      <MacroExpansion>
-         <BuildableReference
-            BuildableIdentifier = "primary"
-            BlueprintIdentifier = "03DC48207E021BC885E3AB108614BAD0"
-            BuildableName = "TUSafariActivity.framework"
-            BlueprintName = "TUSafariActivity"
-            ReferencedContainer = "container:Pods.xcodeproj">
-         </BuildableReference>
-      </MacroExpansion>
       <AdditionalOptions>
       </AdditionalOptions>
    </LaunchAction>

@@ -501,7 +501,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "the.appcookbook.Mystery-Box";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "449e90be-1dda-44a9-8693-5a0a7af115ce";
+				PROVISIONING_PROFILE = "850fd242-027b-469e-864c-90764031283b";
 				SWIFT_OBJC_BRIDGING_HEADER = "Mystery Box/Mystery Box-Bridging-Header.h";
 			};
 			name = Release;
